@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+<title>apaja</title>
 <style type="text/css">
 <!--
 body {
@@ -61,6 +60,8 @@ header {
 4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the blocks around in the HTML source.
 
 */
+
+/*sidebar*/
 .sidebar1 {
 	float: right;
 	width: 390px;
@@ -68,6 +69,27 @@ header {
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
+
+.sidebar1 .top_news_image {
+	width: 389px;
+	height: 619px;
+	background-color: #F90;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+.sidebar1 .top_news_image #subtitle {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#top_image{
+	width: 338px;
+	height: 441px;	
+	float: center;
+	padding-left: 25px;
+}
+
 .content {
 	width: 675px;
 	float: center;
@@ -127,6 +149,20 @@ header, section, footer, aside, article, figure {
     <a href="#"><img src="" alt="Insert Logo Here" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>
   </header>
   <div class="sidebar1">
+  	<div class="top_news_image">
+  		<div id="subtitle">
+  			<br>
+  			<h2>
+  		Perjalanan Whulandary Herman Meraih Mahkota Putri Indonesia 2013
+  		</div>
+    	<img id = "top_image" src ="images/top_image.jpg" >
+        
+    </div>
+    
+    <div class ="most_popular">
+    </div>
+    <div class="most_commented">
+    </div>
     <ul class="nav">
       <li><a href="#">Link one</a></li>
       <li><a href="#">Link two</a></li>
