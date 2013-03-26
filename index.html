@@ -40,15 +40,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 /* ~~ This fixed width container surrounds all other blocks ~~ */
 .container {
 	width: 1100px;
-	background-color: #FFFFFF; /* the auto value on the sides, coupled with the width, centers the layout */
+	background-color: #CCC; /* the auto value on the sides, coupled with the width, centers the layout */
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
 }
 /* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
-header {
-	background-color: #ADB96E;
+.header {
+	background-image: url('images/header.png');
+	width: 1100px;
+	height: 252px;
 }
 /* ~~ These are the columns for the layout. ~~ 
 
@@ -105,8 +107,10 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 
 /* ~~ The footer ~~ */
 footer {
+	color:#ffffff;
+	text-align:center;
 	padding: 10px 0;
-	background-color: #CCC49F;
+	background-color: #000000;
 	position: relative;/* this gives IE6 hasLayout to properly clear */
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
@@ -114,6 +118,48 @@ footer {
 /*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
 header, section, footer, aside, article, figure {
 	display: block;
+}
+#Option {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	color:#ffffff;
+	position:relative;
+	float:right;
+	left:445px;
+	top:200px;
+	padding-right:20px;
+}
+#Login {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	color:#ffffff;
+	position:relative;
+	left:-44px;
+	float:right;
+	width:150px;
+	padding-top:10px;
+}
+#search{
+	position:relative;
+	float:right;
+	width:300px;
+}
+#searchbox{
+	height:25px;
+	width:225px;
+	margin-top:12px;
+	position:relative;
+		font-size: 18px;
+}
+#searchbutton{
+	height:30px;
+	width:30px;
+	position:relative;
+	left:10px;
+	bottom:2px;
+	background: transparent url('images/searchlogo.png') no-repeat;
+	overflow: hidden;
+	border:0;
 }
 -->
 </style><!--[if lt IE 9]>
@@ -123,9 +169,18 @@ header, section, footer, aside, article, figure {
 <body>
 
 <div class="container">
-  <header>
-    <a href="#"><img src="" alt="Insert Logo Here" width="180" height="90" id="Insert_logo" style="background-color: #C6D580; display:block;" /></a>
-  </header>
+  <div class="header">
+      <div id="search">
+          <input type="text" name="search" id="searchbox">
+          <button type="submit" id="searchbutton"></button>
+      </div>
+    <div id="Login">SIGN IN</div>
+    <div id="Option">KONTAK</div>
+    <div id="Option">UNDUH</div>
+    <div id="Option">GALERI</div>
+    <div id="Option">TENTANG</div>
+    <div id="Option">BERANDA</div>
+  </div>
   <div class="sidebar1">
     <ul class="nav">
       <li><a href="#">Link one</a></li>
@@ -160,9 +215,9 @@ header, section, footer, aside, article, figure {
     </section>
     <!-- end .content --></article>
   <footer>
-    <p>This footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
+    <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
-      Address Content
+      Jl. Medan Merdeka Selatan 8-9 Blok F Lt 1 Telp: (+6221)3822255 Fax: (+6221)3822255 email: dki@jakarta.go.id | site map
     </address>
   </footer>
   <!-- end .container --></div>
