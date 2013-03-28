@@ -65,29 +65,65 @@ header {
 .sidebar1 {
 	float: right;
 	width: 390px;
-	background-color: #EADCAE;
+	background-color: rgb(204,204,204);
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
 
 .sidebar1 .top_news_image {
-	width: 389px;
-	height: 619px;
+	width: 388px;
+	height: auto;
 	background-color: #F90;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	padding-bottom: 10px;
+}
+
+.subtitle {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#top_image{
+	width: 338px;
+	height: auto;	
+	float: center;
+	padding-left: 25px;
+}
+
+.most_popular {
+	margin-top: 12px;
+	width: 388px;
+	height: auto;
+	background-color: rgb(255,204,0);
 	border-style: solid;
 	border-color: white;
 	border-width: 1px;
 }
 
-.sidebar1 .top_news_image #subtitle {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-#top_image{
-	width: 338px;
-	height: 441px;	
-	float: center;
+.most_popular ul li {
+	display: inline-block;
 	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+}
+
+.most_commented {
+	margin-top: 12px;
+	width: 388px;
+	height: auto;
+	background-color: rgb(255,255,0);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+.most_commented ul li {
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
 }
 
 .content {
@@ -150,7 +186,7 @@ header, section, footer, aside, article, figure {
   </header>
   <div class="sidebar1">
   	<div class="top_news_image">
-  		<div id="subtitle">
+  		<div class="subtitle">
   			<br>
   			<h2>
   		Perjalanan Whulandary Herman Meraih Mahkota Putri Indonesia 2013
@@ -160,19 +196,37 @@ header, section, footer, aside, article, figure {
     </div>
     
     <div class ="most_popular">
+    	<div class="subtitle">
+    		<br>
+    		<h2> Berita Terpopuler </h2>
+    	</div>
+    	<ul>
+    		<li><a href="#">Informasi Pendidikan/Pelatihan Diklat Operator  Menjahit </a></li>
+			<li><a href="#">Rencana Umum Pengadaan (LPSE Kota Jakarta) </a></li>
+			<li><a href="#">Juara Lomba Artikel Kepemudaan </a></li>
+			<li><a href="#">Laporan Ringkasan APBD T.A 2012 </a></li>
+			<li><a href="#">Daftar Nominatif Tenaga Honorer Kategori I </a></li>
+			<li><a href="#">Daftar Klulusan Peserta Ujian Kompetensi Awal Tahun 2012 Kota Jakarta </a></li>
+			<li><a href="#">Jadwal Pelatihan LPSE Kota Jakarta </a></li>
+			<li><a href="#">Brosur Sosialisasi e-KTP </a></li>
+    	</ul>	
     </div>
     <div class="most_commented">
+    	<div class="subtitle">
+    		<br>
+    		<h2> Berita Paling Banyak Dikomentari </h2>
+    	</div>
+    	<ul>
+    		<li><a href="#">Informasi Pendidikan/Pelatihan Diklat Operator  Menjahit </a></li>
+			<li><a href="#">Rencana Umum Pengadaan (LPSE Kota Jakarta) </a></li>
+			<li><a href="#">Juara Lomba Artikel Kepemudaan </a></li>
+			<li><a href="#">Laporan Ringkasan APBD T.A 2012 </a></li>
+			<li><a href="#">Daftar Nominatif Tenaga Honorer Kategori I </a></li>
+			<li><a href="#">Daftar Klulusan Peserta Ujian Kompetensi Awal Tahun 2012 Kota Jakarta </a></li>
+			<li><a href="#">Jadwal Pelatihan LPSE Kota Jakarta </a></li>
+			<li><a href="#">Brosur Sosialisasi e-KTP </a></li>
+    	</ul>	
     </div>
-    <ul class="nav">
-      <li><a href="#">Link one</a></li>
-      <li><a href="#">Link two</a></li>
-      <li><a href="#">Link three</a></li>
-      <li><a href="#">Link four</a></li>
-    </ul>
-    <aside>
-      <p> The above links demonstrate a basic navigational structure using an unordered list styled with CSS. Use this as a starting point and modify the properties to produce your own unique look. If you require flyout menus, create your own using a Spry menu, a menu widget from Adobe's Exchange or a variety of other javascript or CSS solutions.</p>
-      <p>If you would like the navigation along the top, simply move the ul to the top of the page and recreate the styling.</p>
-    </aside>
   <!-- end .sidebar1 --></div>
   <article class="content">
     <h1>Instructions</h1>
