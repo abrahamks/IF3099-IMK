@@ -219,6 +219,20 @@ header, section, footer, aside, article, figure {
 	overflow: hidden;
 	border:0;
 }
+#downloadsearch{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+#download{
+	padding-top: 10px;
+	padding-left: 15px;
+}
+tr{
+	background-color : #D8EDFE;
+}
+#head{
+	background-color : #9CF;
+}
 -->
 </style><!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -234,7 +248,7 @@ header, section, footer, aside, article, figure {
       </div>
     <div id="Login">SIGN IN</div>
     <div id="Option">KONTAK</div>
-    <div id="Option">UNDUH</div>
+    <div id="Option" style="color:#FFFF00">UNDUH</div>
     <div id="Option">GALERI</div>
     <div id="Option">TENTANG</div>
     <div id="Option">BERANDA</div>
@@ -283,27 +297,62 @@ header, section, footer, aside, article, figure {
     	</ul>	
     </div>
   <!-- end .sidebar1 --></div>
-  <article class="content">
-    <h1>Instructions</h1>
-    <section>
-     <h2>SEMANGAT BERJUANG UNTUK INDONESIA SEJAHTERA</h2>
-      <p>Be aware that the CSS for these layouts is heavily commented. If you do most of your work in Design view, have a peek at the code to get tips on working with the CSS for the fixed layouts. You can remove these comments before you launch your site. To learn more about the techniques used in these CSS Layouts, read this article at Adobe's Developer Center - <a href="http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>.</p>
-    </section>
-    <section>
-      <h2>Clearing Method</h2>
-      <p>Because all the columns are floated, this layout uses a clear:both declaration in the footer rule.  This clearing technique forces the .container to understand where the columns end in order to show any borders or background colors you place on the .container. If your design requires you to remove the footer from the .container, you'll need to use a different clearing method. The most reliable will be to add a &lt;br class=&quot;clearfloat&quot; /&gt; or &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; after your final floated column (but before the .container closes). This will have the same clearing effect. </p>
-    </section>
-    <section>
-      <h2>Logo Replacement</h2>
-      <p>An image placeholder was used in this layout in the header where you'll likely want to place  a logo. It is recommended that you remove the placeholder and replace it with your own linked logo. </p>
-      <p> Be aware that if you use the Property inspector to navigate to your logo image using the SRC field (instead of removing and replacing the placeholder), you should remove the inline background and display properties. These inline styles are only used to make the logo placeholder show up in browsers for demonstration purposes. </p>
-      <p>To remove the inline styles, make sure your CSS Styles panel is set to Current. Select the image, and in the Properties pane of the CSS Styles panel, right click and delete the display and background properties. (Of course, you can always go directly into the code and delete the inline styles from the image or placeholder there.)</p>
-    </section>
-    <section>
-      <h2>Backgrounds</h2>
-      <p>By nature, the background color on any block element will only show for the length of the content. This means if you're using a background color or border to create the look of a side column, it won't extend all the way to the footer but will stop when the content ends. If the .content block will always contain more content, you can place a border on the .content block to divide it from the column.</p>
-    </section>
-    <!-- end .content --></article>
+  <div id="downloadsearch">
+  	<input type="text" name="search2">
+    <select>
+      <option>SEMUA</option>
+      <option>PERDA</option>
+      <option>PROGRAM PERDA</option>
+      <option>KEP. GUB</option>
+    </select>
+    <button type="submit" id="searchbutton"></button>
+  </div>
+  <div id="download">
+    <table border="1">
+        <tr id="head">
+            <td width="37">No</td>
+            <td width="190">Nama Berkas</td>
+            <td width="148">Kategori</td>
+            <td width="181">Tanggal Publikasi</td>
+            <td width="85">Diunduh</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Organisasi & Tata Kerja Setda-Sekwan</td>
+            <td>PERDA</td>
+            <td>3 Mar 2013</td>
+            <td>906 kali</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Amanat Menteri Sosial</td>
+            <td>PROGRAM PEMDA</td>
+            <td>2 Mar 2013</td>
+            <td>229 kali</td>
+        </tr>
+        <tr>
+        	<td>3</td>
+            <td>Sambutan Menteri pada Pertemuan IV</td>
+            <td>PROGRAM PEMDA</td>
+            <td>2 Mar 2013</td>
+            <td>126 kali</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Standar Harga Tahun 2013</td>
+            <td>KEP. GUB</td>
+            <td>1 Mar 2013</td>
+            <td>789 kali</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Amanat untuk SKPO tahun 2013</td>
+            <td>PROGRAM PEMDA</td>
+            <td>1 Mar 2013</td>
+            <td>124 kali</td>
+        </tr>
+    </table>
+  </div>
   <footer>
     <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
