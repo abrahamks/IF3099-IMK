@@ -68,8 +68,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float: right;
 	width: 390px;
 	background-color: rgb(204,204,204);
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding: 10px 10px 10px 10px;
 }
 
 .sidebar1 .top_news_image {
@@ -276,20 +275,30 @@ header, section, footer, aside, article, figure {
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]--></head>
 
+<script>
+	function checkSubmit(e) {
+	   if (e && e.keyCode == 13) {
+		  window.location.href="search.html";
+	   }
+	}
+</script>
+
 <body>
 
 <div class="container">
   <div class="header">
       <div id="search">
-          <input type="text" name="search" id="searchbox">
+		<form action="search.html">
+          <input type="text" name="search" id="searchbox" onKeyPress="checkSubmit(event)">
           <button type="submit" id="searchbutton"></button>
+		</form>
       </div>
-    <div id="Login">SIGN IN</div>
-    <div id="Option">KONTAK</div>
-    <div id="Option">UNDUH</div>
-    <div id="Option">GALERI</div>
-    <div id="Option">TENTANG</div>
-    <div id="Option">BERANDA</div>
+    <div id="Login"><a href="index2.html"><img id="myImage" src ="images/fb_sign.png" ></a></div>
+    <a href="contact.html"><div id="Option">KONTAK</div></a>
+    <a href="download.html"><div id="Option">UNDUH</div></a>
+    <a href="photo.html"><div id="Option">GALERI</div></a>
+    <a href="about.html"><div id="Option">TENTANG</div></a>
+    <a href="index.html"><div id="Option">BERANDA</div></a>
   </div>
   <div class="sidebar1">
   	<div class="top_news_image">
@@ -338,8 +347,10 @@ header, section, footer, aside, article, figure {
   <article class="content">
 	
 	<div id="downloadsearch">
+	<form action="search.html">
   	<input type="text" name="search2">
     <button type="submit">Search</button>
+	</form>
   
  	</article>
 	
