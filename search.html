@@ -137,6 +137,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding-left: 0;
 }
 
+.searchresult {
+	padding-left: 20px;
+}
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
 .content ul, .content ol {
 	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
@@ -172,6 +175,50 @@ footer {
 	position: relative;/* this gives IE6 hasLayout to properly clear */
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
+
+
+.newsfeed {
+	width: 650px;
+	height: 150px;
+	background-color: rgb(255,255,255);
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+.newsfeed2 {
+	width: 650px;
+	height: 350px;
+	background-color: rgb(255,255,255);
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+.newsfeed .newsimg {
+	float: left;
+} 
+
+.newsfeed .newsimg img {
+	width: 50px;
+	height: 50px;
+}
+
+.newsfeed .newstitle {
+	width: 370px;
+	float: left;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.newsfeed .newscontent {
+	width: 600px;
+	float: left;
+}
+
+
 
 /*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
 header, section, footer, aside, article, figure {
@@ -219,6 +266,11 @@ header, section, footer, aside, article, figure {
 	overflow: hidden;
 	border:0;
 }
+#downloadsearch{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
 -->
 </style><!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -285,61 +337,105 @@ header, section, footer, aside, article, figure {
   <!-- end .sidebar1 --></div>
   <article class="content">
 	
-	<section>
-	  <i>Hasil search tentang : </i>
-	  <input type="text" name="search" id="searchbox" >
-	  <button type="submit" id="searchbutton"></button>
-	</section>
+	<div id="downloadsearch">
+  	<input type="text" name="search2">
+    <button type="submit">Search</button>
+  
+ 	</article>
 	
-    <section>
-	 <a href="#"><b>Pemerintah Indonesia</b> - Wikipedia bahasa Indonesia, ensiklopedia ...</a>
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search1.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#"><b>Pemerintah Indonesia</b> - Wikipedia bahasa Indonesia, ensiklopedia ...</a>
      <h5>id.wikipedia.org/wiki/Pemerintah_Indonesia</h5>
-      <p>Pemerintah Indonesia adalah cabang utama pada pemerintahan Indonesia yang menganut sistem presidensial. Pemerintah Indonesia dikepalai oleh seorang ...</p>
-    </section>
-	
-    <section>
-	 <a href="#">Sistem <b>Pemerintahan Indonesia</b> - Hukum & Politik - CARApedia</a>
-     <h5>carapedia.com › Hukum & Politik</h5>
-      <p>Secara teori, berdasarkan UUD 1945, Indonesia menganut sistem pemerintahan presidensiil. Namun dalam prakteknya banyak bagian-bagian dari sistem ...</p>
-    </section>
-	
-    <section>
-	<a href="#">SISTEM <b>PEMERINTAHAN INDONESIA</b> - Chandra Yudiana E</a>
-     <h5>blog.unikom.ac.id/.../1AY.SISTEM-PEMERINTAHAN-INDONESIA...</h5>
-      <p>6 Mar 2011 – SISTEM PEMERINTAHAN INDONESIA Pembukaan UUD 1945 Alinea IV menyatakan bahwa kemerdekaan kebangsaan Indonesia itu disusun ...</p>
-    </section>
-	
-    <section>
-	 <a href="#">Sistem <b>Pemerintahan Indonesia</b> Sekarang - ANNEAHIRA.COM</a>
-     <h5>www.anneahira.com/sistem-pemerintahan-indonesia-sekarang.htm</h5>
-      <p>Sistem pemerintahan Indonesia sekarang mengalami berbagai macam transformasi dari zaman ke zaman. Misalnya, pada era orde lama, Indonesia pernah ...</p>
-    </section>
-		
-	<section>
-	 <a href="#">detikNews : Ibu Kota <b>Pemerintahan Indonesia</b> Harus Segera Dipindah</a>
-     <h5>news.detik.com/.../ibu-kota-pemerintahan-indonesia-harus-segera-dip...</h5>
-      <p>18 Jan 2013 – Bencana Banjir Jakarta, tradisi lima tahunan telah menjadi agenda resmi masyarakat IbuKota Negara Republik Indonesia tercinta ini, sejak ...</p>
-    </section>
-	
-    <section>
-	 <a href="#">Pemberantasan korupsi agenda <b>pemerintah Indonesia</b> - Antara News</a>
-     <h5>www.antaranews.com/.../pemberantasan-korupsi-agenda-pemerintah-...</h5>
-      <p>2 Feb 2013 – ANTARAnews.com - Presiden Susilo Bambang Yudhoyono menyatakan di berbagai forum dunia, termasuk dalam pertemuan Panel Tingkat ...</p>
-    </section>
-	
-	<section>
-	 <a href="#">Kepemimpinan <b>Pemerintahan Indonesia</b></a>
-     <h5>politik.kompasiana.com/.../kepemimpinan-pemerintahan-indonesia-5...</h5>
-      <p>Kepemimpinan Pemerintahan Indonesia. OPINI | 04 February 2013 | 18:56 Dibaca: 467 Komentar: 0 Nihil. Pendahuluan. Dalam lingkungan masyarakat banyak ...	</p>
-    </section>
-	
-    <section>
-	 <a href="#">Sitem <b>pemerintahan indonesia</b></a>
-     <h5>www.slideshare.net/amranjaya/sitem-pemerintahan-indonesia</h5>
-      <p>Sistem pemerintahan Indonesia materi pembelajaran PKn kelas VI diPublikasikan guna mempermudahkan paru guru dan siswa dalam ...</p>
-    </section>
+		    </div>
+		    <div class="newscontent">
+		    	Pemerintah Indonesia adalah cabang utama pada pemerintahan Indonesia yang menganut sistem presidensial. Pemerintah Indonesia dikepalai oleh seorang ...
+		    </div>
+		</div>
+	</article>
 
-	<h4><i>Penelusuran yang terkait dengan pemerintahan indonesia </i></h4>
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search2.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#">SISTEM <b>PEMERINTAHAN INDONESIA</b> - Chandra Yudiana E</a>
+     <h5>blog.unikom.ac.id/.../1AY.SISTEM-</h5>
+		    </div>
+		    <div class="newscontent">
+		    	6 Mar 2011 – SISTEM PEMERINTAHAN INDONESIA Pembukaan UUD 1945 Alinea IV menyatakan bahwa kemerdekaan kebangsaan Indonesia itu disusun ...
+		    </div>
+		</div>
+	</article>
+
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search1.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#"><b>Pemerintah Indonesia</b> - Wikipedia bahasa Indonesia, ensiklopedia ...</a>
+     <h5>id.wikipedia.org/wiki/Pemerintah_Indonesia</h5>
+		    </div>
+		    <div class="newscontent">
+		    	Pemerintah Indonesia adalah cabang utama pada pemerintahan Indonesia yang menganut sistem presidensial. Pemerintah Indonesia dikepalai oleh seorang ...
+		    </div>
+		</div>
+	</article>
+
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search2.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#">SISTEM <b>PEMERINTAHAN INDONESIA</b> - Chandra Yudiana E</a>
+     <h5>blog.unikom.ac.id/.../1AY.SISTEM-</h5>
+		    </div>
+		    <div class="newscontent">
+		    	6 Mar 2011 – SISTEM PEMERINTAHAN INDONESIA Pembukaan UUD 1945 Alinea IV menyatakan bahwa kemerdekaan kebangsaan Indonesia itu disusun ...
+		    </div>
+		</div>
+	</article>
+
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search1.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#"><b>Pemerintah Indonesia</b> - Wikipedia bahasa Indonesia, ensiklopedia ...</a>
+     <h5>id.wikipedia.org/wiki/Pemerintah_Indonesia</h5>
+		    </div>
+		    <div class="newscontent">
+		    	Pemerintah Indonesia adalah cabang utama pada pemerintahan Indonesia yang menganut sistem presidensial. Pemerintah Indonesia dikepalai oleh seorang ...
+		    </div>
+		</div>
+	</article>
+
+	<article class="content">
+		<div class="newsfeed">
+		 	<div class="newsimg">
+		 		<img src="images/search2.jpg">
+		    </div>
+		    <div class="newstitle">
+		    	<a href="#"><b>Pemerintah Indonesia</b> - Wikipedia bahasa Indonesia, ensiklopedia ...</a>
+     <h5>id.wikipedia.org/wiki/Pemerintah_Indonesia</h5>
+		    </div>
+		    <div class="newscontent">
+		    	Pemerintah Indonesia adalah cabang utama pada pemerintahan Indonesia yang menganut sistem presidensial. Pemerintah Indonesia dikepalai oleh seorang ...
+		    </div>
+		</div>
+	</article>
+
+	<article class="content">
+		<div class="newsfeed2">
+			<h4><i>Penelusuran yang terkait dengan pemerintahan indonesia </i></h4>
 	<ul><a href="#">struktur pemerintahan indonesia </a></ul>
 	<ul><a href="#">sistem pemerintahan indonesia saat ini </a></ul>
 	<ul><a href="#">pemerintahan indonesia pada masa reformasi </a></ul>
@@ -348,9 +444,13 @@ header, section, footer, aside, article, figure {
 	<ul><a href="#">sistem pemerintahan indonesia </a></ul>
 	<ul><a href="#">susunan pemerintahan indonesia </a></ul>
 	<ul><a href="#">bentuk pemerintahan indonesia </a></ul>
+		</div>
+	</article>
+
+	
 	
 
-    <!-- end .content --></article>
+    <!-- end .content -->
   <footer>
     <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
