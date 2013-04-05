@@ -131,9 +131,24 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 675px;
 	float: center;
 	padding-top: 10px;
-	padding-right: 0;
+	padding-right: 10px;
 	padding-bottom: 10px;
-	padding-left: 0;
+}
+
+.content .newsfeed {
+	width: 650px;
+	height : 1300px;
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
+.newsfeed {
+	width: 370px;
+	height: 265px;
+	float: left;
+	font-size: 20px;
+	font-style: italic;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -218,51 +233,6 @@ header, section, footer, aside, article, figure {
 	overflow: hidden;
 	border:0;
 }
-#description{
-	padding-top: 15px;
-	padding-left: 60px;
-}
-
-#gallery{
-	padding-top: 15px;
-	padding-left: 15px;
-}
-
-.thumbnails {
-	overflow: auto;
-	height: 125px;
-	width: 600px;
-}
-
-.thumbnails img {
-	height: 80px;
-	border: 4px solid #555;
-	padding: 1px;
-	margin: 0 10px 10px 0;
-}
-
-.thumbnails img:hover {
-	border: 4px solid #00ccff;
-	cursor:pointer;
-}
-
-#inner-wrap {
-    float:left;
-    margin-right:-30000px;/*Be safe with Opera's limited negative margin of 32695px (-999em could cause problems with large font sizes)*/
-}
-
-.preview img {
-	border: 4px solid #444;
-	padding: 1px;
-	height: 500px;
-}
-
-#album{
-	margin-top: 15px;
-	padding-top: 30px;
-	margin-left: 60px;
-	border-top:thick double #000000;
-}
 -->
 </style><!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -289,8 +259,8 @@ header, section, footer, aside, article, figure {
     <div id="Login"><a href="index2.html"><img id="myImage" src ="images/fb_sign.png" ></a></div>
     <a href="contact.html"><div id="Option">KONTAK</div></a>
     <a href="download.html"><div id="Option">UNDUH</div></a>
-    <a href="photo.html"><div id="Option" style="color:#FFFF00">GALERI</div></a>
-    <a href="about.html"><div id="Option">TENTANG</div></a>
+    <a href="photo.html"><div id="Option">GALERI</div></a>
+    <a href="about.html"><div id="Option" style="color:#FFFF00">TENTANG</div></a>
     <a href="index.html"><div id="Option">BERANDA</div></a>
   </div>
   <div class="sidebar1">
@@ -337,46 +307,12 @@ header, section, footer, aside, article, figure {
     	</ul>	
     </div>
   <!-- end .sidebar1 --></div>
-  <div id="description">
-	<font size="5" color="black">Melirik Kebudayaan Bali</font></br>
-	<font size="3" color="grey">Dibuat pada 17 Februari 2013, pukul 15.46</font>
-  </div>
-  <div id="gallery" align="center">
-	<div class="preview" align="center">
-		<img name="preview" src="images/bimg1.jpg" alt="";/>
-	</div><br/>
-	<div class="thumbnails">
-		<div id="inner-wrap">
-		<img onclick="preview.src=bimg1.src" name="bimg1" src="images/bimg1.jpg" alt=""/>
-		<img onclick="preview.src=bimg2.src" name="bimg2" src="images/bimg2.jpg" alt=""/>
-		<img onclick="preview.src=bimg3.src" name="bimg3" src="images/bimg3.jpg" alt=""/>
-		<img onclick="preview.src=bimg4.src" name="bimg4" src="images/bimg4.jpg" alt=""/>
-		<img onclick="preview.src=bimg5.src" name="bimg5" src="images/bimg5.jpg" alt=""/>
-		<img onclick="preview.src=bimg6.src" name="bimg6" src="images/bimg6.jpg" alt=""/>
-		</div>
-	</div>
-  </div> <!-- Close the gallery div -->
-  <div id="album">
-	<font size="4" color="black">Album Foto</font></br></br>
-	<table>
-	<tr>
-		<td width="220" align="center">
-			<a href=photo.html>
-			<img src="images/img2.jpg" alt="" height="150" border= "4px solid #555";/>
-			</a></br>
-			Java Jazz Festival 2013</br>
-			3 Maret 2013
-		</td>
-		<td width="220" align="center">
-			<a href=photo2.html>
-			<img src="images/bimg1.jpg" alt="" height="150" border= "4px solid #555";/>
-			</a></br>
-			Melirik Kebudayaan Bali</br>
-			17 Februari 2013
-		</td>
-	</tr>
-	</table>
-  </div>
+  <article class="content">
+  	<div class="newsfeed">
+	 	Web Designer : Abraham Krisnanda, Enjella Melissa Nababan, Mario Orlando, Sonny Fitra, Novriady Saputra
+  	</div>
+  </article>
+
   <footer>
     <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
