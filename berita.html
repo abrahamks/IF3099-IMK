@@ -3,10 +3,9 @@
 <head>
 <title>apaja</title>
 <style type="text/css">
-
 <!--
 body {
-  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	background-color: #42413C;
 	margin: 0;
 	padding: 0;
@@ -133,9 +132,52 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 675px;
 	float: center;
 	padding-top: 10px;
-	padding-right: 0;
+	padding-right: 10px;
 	padding-bottom: 10px;
-	padding-left: 0;
+}
+
+.content .newsfeed {
+	width: 650px;
+	height : 1300px;
+	background-color: rgb(255,255,255);
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
+.newsfeed .newsimg {
+	width: 250px;
+	height: 250px;
+	float: left;
+	padding-top: 10px;
+} 
+
+.newsfeed .newstitle {
+	width: 370px;
+	height: 265px;
+	float: left;
+	font-size: 35px;
+	font-style: italic;
+}
+
+.newsfeed .newscontent {
+	width: 640px;
+	height: auto;
+	float: left;
+	background-color: rgb(255,255,255);
+	border-bottom: dashed;
+}
+
+.newsfeed .komentar {
+	background-color: rgb(255,255,255);
+	border-bottom: dashed;
+}
+
+.newsfeed .formkomentar {
+	background-color: rgb(255,255,255);
+	width: 400px;
+	float: left;
+	padding-top: 25px;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -285,55 +327,45 @@ header, section, footer, aside, article, figure {
     </div>
   <!-- end .sidebar1 --></div>
   <article class="content">
-	<h1><strong><u>SEMANGAT BERJUANG UNTUK INDONESIA SEJAHTERA</u></strong></h1>
-	<section>
-	<img id = "left_image" src ="images/w2.jpg" width ="300" height = "300">
-    <p style="text-align:justify">
-	<div>Pagi ini timnas akan bertolak ke Kuala Lumpur. Hati penuh haru menyertai keberangkatan mereka.</div>
-	<div>Mereka para ksatria terpilih, manusia-manusia pilihan. Mereka para pejuang di lapangan hijau. Setelah berbulan-bulan ditempa dengan berbagai cobaan, kini telah menggenapkan semua kekuatan hati, fisik, mental dan semua bekal latihan yang selama ini mereka jalani menjadi satu. Menjadi satu kekuatan untuk berperang melawan Laos, Singapura dan Malaysia untuk satu tujuan. Meraih kemenangan demi kemenangan demi mempersembahkan prestasi bagi Indonesia.</div>
-	<div>Keinginan yang kuat untuk menang telah diwujudkan dalam semangat yang menggelora di setiap sesi latihan dan pertandingan ujicoba. Sehingga kini semangat yang menggelora, serta keinginan untuk meraih kemenangan disetiap pertandingan telah membuncah.Seperti semangat tempur para laskar pejuang di masa lalu yang ingin segera melumat habis tentara Mallaby 67 tahun silam di Surabaya. Wis igit-igit. Wis getem-getem istilah orang-orang tua dulu. Ingin segera menghabisi wong-wong Londo yang ingin menjajah Indonesia kembali. Siapapun orangnya siapapun negaranya yang melindungi kepentingan Belanda harus disikat habis. Gak peduli jendral atau kopral. Kowe bakal tak entekno. Modaro koen. Minggato teko bumi Indonesia! Luwih becik aku mati ketimbang urip terjajah.Intinya sodara-sodara. Para ksatria kita ini sudah tak sabar untuk menghabisi semua lawan mereka.</div>
-	<div>Semoga kita meraih kemenangan demi kemenangan di Bukit Jalil. Segenap harapan dan doa bangsa Indonesia untuk meraih prestas tertinggi semoga mampu terwujud disana.</div>
-	<div>Semoga kita berjaya.</div>
-	<div>Merdeka Merdeka Merdeka !!!</div> 
-	</p>
-	
-	<div class="komen">
-		<div class="komenjudul">Comments</div>
-			<div id="konten-commenter">
-				<strong><span id="jmlkomen">3</span></strong> comments
-			</div>
-			<div class="line"></div>
-				<div id="lkomen">
-					<div class="komen-nama">Mario Orlando Teng</div>
-					<div class="komen-tgl">| April 3, 2013 at 12:51</div>
-					<div class="komen-isi">Saya komentarin ya</div>
-					<div class="line"></div>
-					<div class="komen-nama">Enjella Melissa Nababan</div>
-					<div class="komen-tgl">| April 3, 2013 at 13:31</div>
-					<div class="komen-isi">Dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy dummy.</div>
-					<div class="line"></div>
-					<div class="komen-nama">Abraham Krisnanda</div>
-					<div class="komen-tgl">| April 3, 2013 at 14:41</div>
-					<div class="komen-isi">Oke, Gan! Lanjutkan!</div>
-					<div class="line"></div>
-				</div>
-				<form action="" method="get">
-					<div id="komen-tulis"><strong>Tulis Komentar</strong></div>
-					<div class="clear"></div>
-					<div class="komen-label btg-mrh" id="komen-btg">*) wajib diisi</div>
-					<div class="clear"></div>
-					<div class="komen-label">Nama :<span class="btg-mrh">*</span></div><div class="register-td"></div><div class="register-input"><input class="register-input-input" type="text" name="nama" id="form-nama" /></div>
-					<div class="clear error" id="error-username"></div>
-					<div class="komen-label">Komentar :<span class="btg-mrh">*</span></div><div class="register-td"></div><div class="register-input"><textarea name="komentar" rows="3" cols="50" id="form-komen"></textarea></div>
-					<div class="clear"></div>
-					<div class="komen-submit"><input type="button" name="submit" onclick="commenting()" value="Submit" /></div>
-				</form>
-	</div>
-	
-    </section> 
-    
-    <!-- end .content -->
- </article>
+  	<div class="newsfeed">
+	 	<div class="newsimg">
+	 		<img src="images/news_1.jpg">
+	    </div>
+	    <div class="newstitle">
+	    	SEMANGAT BERJUANG UNTUK INDONESIA SEJAHTERA
+	    </div>
+	    <div class="newscontent">
+		<br>Pagi ini timnas akan bertolak ke Kuala Lumpur. Hati penuh haru menyertai keberangkatan mereka. Mereka para ksatria terpilih, manusia-manusia pilihan. Mereka para pejuang di lapangan hijau. Setelah berbulan-bulan ditempa dengan berbagai cobaan, kini telah menggenapkan semua kekuatan hati, fisik, mental dan semua bekal latihan yang selama ini mereka jalani menjadi satu. Menjadi satu kekuatan untuk berperang melawan Laos, Singapura dan Malaysia untuk satu tujuan. “Meraih kemenangan demi kemenangan demi mempersembahkan prestasi bagi Indonesia.”
+		<br>
+		<br>Keinginan yang kuat untuk menang telah diwujudkan dalam semangat yang menggelora di setiap sesi latihan dan pertandingan ujicoba. Sehingga kini semangat yang menggelora, serta keinginan untuk meraih kemenangan disetiap pertandingan telah membuncah.
+		Seperti semangat tempur para laskar pejuang di masa lalu yang ingin segera melumat habis tentara Mallaby 67 tahun silam di Surabaya. Wis igit-igit. Wis getem-getem istilah orang-orang tua dulu. Ingin segera menghabisi wong-wong Londo yang ingin menjajah Indonesia kembali. Siapapun orangnya siapapun negaranya yang melindungi kepentingan Belanda harus disikat habis. Gak peduli jendral atau kopral. Kowe bakal tak entekno. Modaro koen. Minggato teko bumi Indonesia! Luwih becik aku mati ketimbang urip terjajah.
+		<br>
+		<br>Intinya sodara-sodara. Para ksatria kita ini sudah tak sabar untuk menghabisi semua lawan mereka.Semoga kita meraih kemenangan demi kemenangan di Bukit Jalil. Segenap harapan dan doa bangsa Indonesia untuk meraih prestas tertinggi semoga mampu terwujud disana.
+		Semoga kita berjaya.
+		<br>
+		<br><b>Merdeka Merdeka Merdeka !!!</b>
+
+		<br>
+		<br>
+	    </div>
+	    <div>
+
+	    </div>
+	    <div class="formkomentar">
+	    	<b>Tinggalkan Komentar</b>
+	    	<br>
+	    	<br>
+	    	<form>
+				First name: <input type="text" name="firstname"><br><br>
+				Last name: <input type="text" name="lastname"><br><br>
+					<textarea name="comments" cols="45" rows="5">
+					</textarea><br>
+					<input type="submit" value="Submit" />
+			</form> 
+	    </div>
+  	</div>
+  </article>
+
   <footer>
     <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
@@ -341,7 +373,5 @@ header, section, footer, aside, article, figure {
     </address>
   </footer>
   <!-- end .container --></div>
-  
-    
 </body>
 </html>
