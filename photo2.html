@@ -219,29 +219,50 @@ header, section, footer, aside, article, figure {
 	overflow: hidden;
 	border:0;
 }
-#downloadsearch{
+#description{
+	padding-top: 15px;
+	padding-left: 60px;
+}
+
+#gallery{
 	padding-top: 15px;
 	padding-left: 15px;
 }
-#searchbutton2{
-	height:30px;
-	width:30px;
-	position:relative;
-	left:10px;
-	bottom:2px;
-	background: transparent url('images/btn-search.png') no-repeat;
-	overflow: hidden;
-	border:0;
+
+.thumbnails {
+	overflow: auto;
+	height: 125px;
+	width: 600px;
 }
-#download{
-	padding-top: 10px;
-	padding-left: 15px;
+
+.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 0 10px 10px 0;
 }
-tr{
-	background-color : #D8EDFE;
+
+.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
 }
-#head{
-	background-color : #9CF;
+
+#inner-wrap {
+    float:left;
+    margin-right:-30000px;/*Be safe with Opera's limited negative margin of 32695px (-999em could cause problems with large font sizes)*/
+}
+
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+	height: 500px;
+}
+
+#album{
+	margin-top: 15px;
+	padding-top: 30px;
+	margin-left: 60px;
+	border-top:thick double #000000;
 }
 -->
 </style><!--[if lt IE 9]>
@@ -307,99 +328,48 @@ tr{
     	</ul>	
     </div>
   <!-- end .sidebar1 --></div>
-  <div id="downloadsearch">
-  	<input type="text" name="search2">
-    <select>
-      <option>SEMUA</option>
-      <option>PERDA</option>
-      <option>PROGRAM PERDA</option>
-      <option>KEP. GUB</option>
-    </select>
-    <button type="submit">Search</button>
+  <div id="description">
+	<font size="5" color="black">Melirik Kebudayaan Bali</font></br>
+	<font size="3" color="grey">Dibuat pada 17 Februari 2013, pukul 15.46</font>
   </div>
-  <div id="download">
-    <table border="1">
-        <tr id="head">
-            <td width="37">No</td>
-            <td width="190">Nama Berkas</td>
-            <td width="148">Kategori</td>
-            <td width="181">Tanggal Publikasi</td>
-            <td width="85">Diunduh</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><a href="upload/TA1.pdf">Organisasi & Tata Kerja Setda-Sekwan</a></td>
-            <td>PERDA</td>
-            <td>3 Mar 2013</td>
-            <td>906 kali</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><a href="#">Amanat Menteri Sosial</a></td>
-            <td>PROGRAM PEMDA</td>
-            <td>2 Mar 2013</td>
-            <td>229 kali</td>
-        </tr>
-        <tr>
-        	<td>3</td>
-            <td><a href="#">Sambutan Menteri pada Pertemuan IV</a></td>
-            <td>PROGRAM PEMDA</td>
-            <td>2 Mar 2013</td>
-            <td>126 kali</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><a href="#">Standar Harga Tahun 2013</a></td>
-            <td>KEP. GUB</td>
-            <td>1 Mar 2013</td>
-            <td>789 kali</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td><a href="#">Amanat untuk SKPO tahun 2013</a></td>
-            <td>PROGRAM PEMDA</td>
-            <td>1 Mar 2013</td>
-            <td>124 kali</td>
-        </tr>
-		<tr>
-            <td>6</td>
-            <td><a href="#">Penguman Pengangkatan Dokter PTT</a></td>
-            <td>PROGRAM PERDA</td>
-            <td>26 Feb 2013</td>
-            <td>443 kali</td>
-        </tr>
-		<tr>
-            <td>7</td>
-            <td><a href="#">Kegiatan MICE 2013</a></td>
-            <td>PROGRAM PERDA</td>
-            <td>20 Feb 2013</td>
-            <td>846 kali</td>
-        </tr>
-		<tr>
-            <td>8</td>
-            <td><a href="#">Koran Desa (BARA) Edisi Februari 2013 Bag.1</a></td>
-            <td>PROGRAM PERDA</td>
-            <td>17 Feb 2013</td>
-            <td>865 kali</td>
-        </tr>
-		<tr>
-            <td>9</td>
-            <td><a href="#">Koran Desa (BARA) Edisi Februari 2013 Bag.2</a></td>
-            <td>PROGRAM PERDA</td>
-            <td>17 Feb 2013</td>
-            <td>997 kali</td>
-        </tr>
-		<tr>
-            <td>10</td>
-            <td><a href="#">Calendar Event Feb-Mar 2013</a></td>
-            <td>PROGRAM PERDA</td>
-            <td>10 Feb 2013</td>
-            <td>1906 kali</td>
-        </tr>
-    </table>
+  <div id="gallery" align="center">
+	<div class="preview" align="center">
+		<img name="preview" src="images/bimg1.jpg" alt="";/>
+	</div><br/>
+	<div class="thumbnails">
+		<div id="inner-wrap">
+		<img onclick="preview.src=bimg1.src" name="bimg1" src="images/bimg1.jpg" alt=""/>
+		<img onclick="preview.src=bimg2.src" name="bimg2" src="images/bimg2.jpg" alt=""/>
+		<img onclick="preview.src=bimg3.src" name="bimg3" src="images/bimg3.jpg" alt=""/>
+		<img onclick="preview.src=bimg4.src" name="bimg4" src="images/bimg4.jpg" alt=""/>
+		<img onclick="preview.src=bimg5.src" name="bimg5" src="images/bimg5.jpg" alt=""/>
+		<img onclick="preview.src=bimg6.src" name="bimg6" src="images/bimg6.jpg" alt=""/>
+		</div>
+	</div>
+  </div> <!-- Close the gallery div -->
+  <div id="album">
+	<font size="4" color="black">Album Foto</font></br></br>
+	<table>
+	<tr>
+		<td width="220" align="center">
+			<a href=photo.html>
+			<img src="images/img2.jpg" alt="" height="150" border= "4px solid #555";/>
+			</a></br>
+			Java Jazz Festival 2013</br>
+			3 Maret 2013
+		</td>
+		<td width="220" align="center">
+			<a href=photo2.html>
+			<img src="images/bimg1.jpg" alt="" height="150" border= "4px solid #555";/>
+			</a></br>
+			Melirik Kebudayaan Bali</br>
+			17 Februari 2013
+		</td>
+	</tr>
+	</table>
   </div>
   <footer>
-    <p>Â© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
+    <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
       Jl. Medan Merdeka Selatan 8-9 Blok F Lt 1 Telp: (+6221)3822255 Fax: (+6221)3822255 email: dki@jakarta.go.id | site map
     </address>
