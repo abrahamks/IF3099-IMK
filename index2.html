@@ -131,9 +131,41 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 675px;
 	float: center;
 	padding-top: 10px;
-	padding-right: 0;
+	padding-right: 10px;
 	padding-bottom: 10px;
-	padding-left: 0;
+}
+
+.newsfeed {
+	width: 650px;
+	height : 500px;
+	background-color: rgb(255,255,255);
+	margin-left: 10px;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
+.newsfeed .newsimg {
+	float: left;
+	padding-top: 10px;
+} 
+
+.newsfeed .newsimg img {
+
+	width: 250px;
+	height: 250px;
+}
+
+.newsfeed .newstitle {
+	width: 370px;
+	height: 265px;
+	float: left;
+	font-size: 35px;
+	font-style: italic;
+}
+
+.newsfeed .newscontent {
+	width: 640px;
+	float: left;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -188,13 +220,13 @@ header, section, footer, aside, article, figure {
 }
 #Login {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 25px;
+	font-size: 12px;
 	color:#ffffff;
 	position:relative;
 	left:-44px;
 	float:right;
 	width:150px;
-	padding-top:10px;
+	padding-top:20px;
 }
 #search{
 	position:relative;
@@ -217,51 +249,6 @@ header, section, footer, aside, article, figure {
 	background: transparent url('images/searchlogo.png') no-repeat;
 	overflow: hidden;
 	border:0;
-}
-#description{
-	padding-top: 15px;
-	padding-left: 60px;
-}
-
-#gallery{
-	padding-top: 15px;
-	padding-left: 15px;
-}
-
-.thumbnails {
-	overflow: auto;
-	height: 125px;
-	width: 600px;
-}
-
-.thumbnails img {
-	height: 80px;
-	border: 4px solid #555;
-	padding: 1px;
-	margin: 0 10px 10px 0;
-}
-
-.thumbnails img:hover {
-	border: 4px solid #00ccff;
-	cursor:pointer;
-}
-
-#inner-wrap {
-    float:left;
-    margin-right:-30000px;/*Be safe with Opera's limited negative margin of 32695px (-999em could cause problems with large font sizes)*/
-}
-
-.preview img {
-	border: 4px solid #444;
-	padding: 1px;
-	height: 500px;
-}
-
-#album{
-	margin-top: 15px;
-	padding-top: 30px;
-	margin-left: 60px;
-	border-top:thick double #000000;
 }
 -->
 </style><!--[if lt IE 9]>
@@ -286,12 +273,12 @@ header, section, footer, aside, article, figure {
           <button type="submit" id="searchbutton"></button>
 		</form>
       </div>
-    <div id="Login"><a href="index2.html"><img id="myImage" src ="images/fb_sign.png" ></a></div>
+    <div id="Login">Welcome, Budi <a href="index.html"><font style="color:#FFFF00">(Logout)</font></a></div>
     <a href="contact.html"><div id="Option">KONTAK</div></a>
     <a href="download.html"><div id="Option">UNDUH</div></a>
-    <a href="photo.html"><div id="Option" style="color:#FFFF00">GALERI</div></a>
+    <a href="photo.html"><div id="Option">GALERI</div></a>
     <a href="about.html"><div id="Option">TENTANG</div></a>
-    <a href="index.html"><div id="Option">BERANDA</div></a>
+    <a href="index.html"><div id="Option" style="color:#FFFF00">BERANDA</div></a>
   </div>
   <div class="sidebar1">
   	<div class="top_news_image">
@@ -337,46 +324,53 @@ header, section, footer, aside, article, figure {
     	</ul>	
     </div>
   <!-- end .sidebar1 --></div>
-  <div id="description">
-	<font size="5" color="black">Melirik Kebudayaan Bali</font></br>
-	<font size="3" color="grey">Dibuat pada 17 Februari 2013, pukul 15.46</font>
-  </div>
-  <div id="gallery" align="center">
-	<div class="preview" align="center">
-		<img name="preview" src="images/bimg1.jpg" alt="";/>
-	</div><br/>
-	<div class="thumbnails">
-		<div id="inner-wrap">
-		<img onclick="preview.src=bimg1.src" name="bimg1" src="images/bimg1.jpg" alt=""/>
-		<img onclick="preview.src=bimg2.src" name="bimg2" src="images/bimg2.jpg" alt=""/>
-		<img onclick="preview.src=bimg3.src" name="bimg3" src="images/bimg3.jpg" alt=""/>
-		<img onclick="preview.src=bimg4.src" name="bimg4" src="images/bimg4.jpg" alt=""/>
-		<img onclick="preview.src=bimg5.src" name="bimg5" src="images/bimg5.jpg" alt=""/>
-		<img onclick="preview.src=bimg6.src" name="bimg6" src="images/bimg6.jpg" alt=""/>
-		</div>
-	</div>
-  </div> <!-- Close the gallery div -->
-  <div id="album">
-	<font size="4" color="black">Album Foto</font></br></br>
-	<table>
-	<tr>
-		<td width="220" align="center">
-			<a href=photo.html>
-			<img src="images/img2.jpg" alt="" height="150" border= "4px solid #555";/>
-			</a></br>
-			Java Jazz Festival 2013</br>
-			3 Maret 2013
-		</td>
-		<td width="220" align="center">
-			<a href=photo2.html>
-			<img src="images/bimg1.jpg" alt="" height="150" border= "4px solid #555";/>
-			</a></br>
-			Melirik Kebudayaan Bali</br>
-			17 Februari 2013
-		</td>
-	</tr>
-	</table>
-  </div>
+  <article class="content">
+  	<div class="newsfeed">
+	 	<div class="newsimg">
+	 		<img src="images/w2.png">
+	    </div>
+	    <div class="newstitle">
+	    	<a href="berita1.html">SEMANGAT BERJUANG UNTUK INDONESIA SEJAHTERA</a>
+	    </div>
+	    <div class="newscontent">
+	    	Pagi ini timnas akan bertolak ke Kuala Lumpur. Hati penuh haru menyertai keberangkatan mereka.
+			Mereka para ksatria terpilih, manusia-manusia pilihan. Mereka para pejuang di lapangan hijau. Setelah berbulan-bulan ditempa dengan berbagai cobaan, kini telah menggenapkan semua kekuatan hati, fisik, mental dan semua bekal latihan yang selama ini mereka jalani menjadi satu. Menjadi satu kekuatan untuk berperang melawan Laos, Singapura dan Malaysia untuk satu tujuan. “Meraih kemenangan demi kemenangan demi mempersembahkan prestasi bagi Indonesia.”.....
+		<i><a href="berita1.html">Selanjutnya </a></i>
+	    </div>
+  	</div>
+  </article>
+  
+  <article class="content">
+  	<div class="newsfeed">
+	 	<div class="newsimg">
+	 		<img src="images/w3.png">
+	    </div>
+	    <div class="newstitle">
+	    	<a href="berita2.html">SEPULUH HEWAN ASLI INDONESIA YANG HAMPIR PUNAH</a>
+	    </div>
+	    <div class="newscontent">
+	    	Elang Jawa (Spizaetus bartelsi) adalah burung nasional Indonesia karena kemiripannya dengan Garuda dan juga merupakan simbol jenis satwa langka di Indonesia. Elang Jawa hanya terdapat di Pulau Jawa dan penyebarannya terbatas di hutan-hutan. Sebagai predator puncak, Elang Jawa memainkan peran yang penting dalam menjaga keseimbangan dan fungsi dari bioma hutan di Jawa. Elang Jawa merupakan salah satu jenis burung pemangsa terlangka di dunia. Berdasarkan kriteria keterancaman terbaru dari IUCN, Elang Jawa dimasukan dalam kategori Endangered atau “Genting”......
+		<i><a href="berita2.html">Selanjutnya </a></i>
+	    </div>
+  	</div>
+  </article>
+
+  <article class="content">
+  	<div class="newsfeed">
+	 	<div class="newsimg">
+	 		<img src="images/w1.png">
+	    </div>
+	    <div class="newstitle">
+	    	<a href="berita3.html">PENTINGNYA PENDIDIKAN ANAK USIA DINI DALAM MEMBANGUN MASA DEPAN BANGSA</a>
+	    </div>
+	    <div class="newscontent">
+	    	Pendidikan anak usia dini (PAUD) adalah jenjang pendidikan sebelum jenjang pendidikan dasar yang merupakan suatu upaya pembinaan yang ditujukan bagi anak sejak lahir sampai dengan usia enam tahun yang dilakukan melalui pemberian rangsangan pendidikan untuk membantu pertumbuhan dan perkembangan jasmani dan rohani agar anak memiliki kesiapan dalam memasuki pendidikan lebih lanjut, yang diselenggarakan pada jalur formal, nonformal, dan informal.
+		  	Pendidikan anak usia dini merupakan salah satu bentuk penyelenggaraan pendidikan yang menitikberatkan pada peletakan .....
+		<i><a href="berita3.html">Selanjutnya </a></i>
+	    </div>
+  	</div>
+  </article>
+
   <footer>
     <p>© 1995 - 2013 Dinas Komunikasi, Informatika dan Kehumasan Pemprov DKI Jakarta</p>
     <address>
