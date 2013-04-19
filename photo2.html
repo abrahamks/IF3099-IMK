@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>apaja</title>
+<title>Apaja - Galeri</title>
 <style type="text/css">
 <!--
 body {
@@ -257,6 +257,18 @@ header, section, footer, aside, article, figure {
 	height: 500px;
 }
 
+.detail {
+	border: 2px solid #333333;
+	margin-left:37px;
+	margin-right:460px;
+	margin-bottom:10px;
+	padding:5px 5px 5px 5px;
+	align:left;
+	height:40px;
+	background: #000000;
+	color:#FFF;
+}
+
 #album{
 	margin-top: 15px;
 	padding-top: 30px;
@@ -273,6 +285,24 @@ header, section, footer, aside, article, figure {
 	   if (e && e.keyCode == 13) {
 		  window.location.href="search.html";
 	   }
+	}
+	function Case1() {
+		document.getElementById('detail').innerHTML = 'Tarian Adat Bali';
+	}
+	function Case2() {
+		document.getElementById('detail').innerHTML = 'Suasana Upacara Adat di Bali';
+	}
+	function Case3() {
+		document.getElementById('detail').innerHTML = 'Tarian Khas Bali';
+	}
+	function Case4() {
+		document.getElementById('detail').innerHTML = '';
+	}
+	function Case5() {
+		document.getElementById('detail').innerHTML = 'Perform dan Akrobat dari Pemuda-Pemudi Bali';
+	}
+	function Case6() {
+		document.getElementById('detail').innerHTML = 'Penutupan Acara / Festival Kebudayaan';
 	}
 </script>
 
@@ -345,14 +375,18 @@ header, section, footer, aside, article, figure {
 	<div class="preview" align="center">
 		<img name="preview" src="images/bimg1.jpg" alt="";/>
 	</div><br/>
+	<div id="detail" class="detail" align="center">
+	Tarian Adat Bali
+	<br>
+	</div>
 	<div class="thumbnails">
 		<div id="inner-wrap">
-		<img onclick="preview.src=bimg1.src" name="bimg1" src="images/bimg1.jpg" alt=""/>
-		<img onclick="preview.src=bimg2.src" name="bimg2" src="images/bimg2.jpg" alt=""/>
-		<img onclick="preview.src=bimg3.src" name="bimg3" src="images/bimg3.jpg" alt=""/>
-		<img onclick="preview.src=bimg4.src" name="bimg4" src="images/bimg4.jpg" alt=""/>
-		<img onclick="preview.src=bimg5.src" name="bimg5" src="images/bimg5.jpg" alt=""/>
-		<img onclick="preview.src=bimg6.src" name="bimg6" src="images/bimg6.jpg" alt=""/>
+		<img onclick="preview.src=bimg1.src;Case1()" name="bimg1" src="images/bimg1.jpg" alt=""/>
+		<img onclick="preview.src=bimg2.src;Case2()" name="bimg2" src="images/bimg2.jpg" alt=""/>
+		<img onclick="preview.src=bimg3.src;Case3()" name="bimg3" src="images/bimg3.jpg" alt=""/>
+		<img onclick="preview.src=bimg4.src;Case4()" name="bimg4" src="images/bimg4.jpg" alt=""/>
+		<img onclick="preview.src=bimg5.src;Case5()" name="bimg5" src="images/bimg5.jpg" alt=""/>
+		<img onclick="preview.src=bimg6.src;Case6()" name="bimg6" src="images/bimg6.jpg" alt=""/>
 		</div>
 	</div>
   </div> <!-- Close the gallery div -->

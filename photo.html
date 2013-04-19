@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>apaja</title>
+<title>Apaja - Galeri</title>
 <style type="text/css">
 <!--
 body {
@@ -257,6 +257,18 @@ header, section, footer, aside, article, figure {
 	height: 500px;
 }
 
+.detail {
+	border: 2px solid #333333;
+	margin-left:37px;
+	margin-right:460px;
+	margin-bottom:10px;
+	padding:5px 5px 5px 5px;
+	align:left;
+	height:40px;
+	background: #000000;
+	color:#FFF;
+}
+
 #album{
 	margin-top: 15px;
 	padding-top: 30px;
@@ -273,6 +285,30 @@ header, section, footer, aside, article, figure {
 	   if (e && e.keyCode == 13) {
 		  window.location.href="search.html";
 	   }
+	}
+	function Case1() {
+		document.getElementById('detail').innerHTML = 'Poster Publikasi Java Jazz Festival 2013';
+	}
+	function Case2() {
+		document.getElementById('detail').innerHTML = 'Publikasi Inovatif Java Jazz Festival 2013<br>Digunakan sebagai teaser saat publikasi awal';
+	}
+	function Case3() {
+		document.getElementById('detail').innerHTML = 'Suasana Konser di D2 Djarum Super Mild Hall';
+	}
+	function Case4() {
+		document.getElementById('detail').innerHTML = 'Suasana Konser di Bromo Room';
+	}
+	function Case5() {
+		document.getElementById('detail').innerHTML = 'Perform Joss Stone di D2 Djarum Super Mild Hall';
+	}
+	function Case6() {
+		document.getElementById('detail').innerHTML = 'Perform Raisa di D2 Djarum Super Mild Hall';
+	}
+	function Case7() {
+		document.getElementById('detail').innerHTML = '';
+	}
+	function Case8() {
+		document.getElementById('detail').innerHTML = 'The Soul Rebel Live';
 	}
 </script>
 
@@ -345,16 +381,20 @@ header, section, footer, aside, article, figure {
 	<div class="preview" align="center">
 		<img name="preview" src="images/img1.jpg" alt="";/>
 	</div><br/>
+	<div id="detail" class="detail" align="center">
+	Poster Publikasi Java Jazz Festival 2013
+	<br>
+	</div>
 	<div class="thumbnails">
 		<div id="inner-wrap">
-		<img onclick="preview.src=img1.src" name="img1" src="images/img1.jpg" alt=""/>
-		<img onclick="preview.src=img2.src" name="img2" src="images/img2.jpg" alt=""/>
-		<img onclick="preview.src=img3.src" name="img3" src="images/img3.jpg" alt=""/>
-		<img onclick="preview.src=img4.src" name="img4" src="images/img4.jpg" alt=""/>
-		<img onclick="preview.src=img5.src" name="img5" src="images/img5.jpg" alt=""/>
-		<img onclick="preview.src=img6.src" name="img6" src="images/img6.jpg" alt=""/>
-		<img onclick="preview.src=img7.src" name="img7" src="images/img7.jpg" alt=""/>
-		<img onclick="preview.src=img8.src" name="img8" src="images/img8.jpg" alt=""/>
+		<img onClick="preview.src=img1.src;Case1()" name="img1" src="images/img1.jpg" alt=""/>
+		<img onClick="preview.src=img2.src;Case2()" name="img2" src="images/img2.jpg" alt=""/>
+		<img onClick="preview.src=img3.src;Case3()" name="img3" src="images/img3.jpg" alt=""/>
+		<img onClick="preview.src=img4.src;Case4()" name="img4" src="images/img4.jpg" alt=""/>
+		<img onClick="preview.src=img5.src;Case5()" name="img5" src="images/img5.jpg" alt=""/>
+		<img onClick="preview.src=img6.src;Case6()" name="img6" src="images/img6.jpg" alt=""/>
+		<img onClick="preview.src=img7.src;Case7()" name="img7" src="images/img7.jpg" alt=""/>
+		<img onClick="preview.src=img8.src;Case8()" name="img8" src="images/img8.jpg" alt=""/>
 		</div>
 	</div>
   </div> <!-- Close the gallery div -->
